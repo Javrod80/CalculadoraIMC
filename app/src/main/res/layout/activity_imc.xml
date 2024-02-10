@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    tools:context=".IMC">
+
+
+    <TextView
+        android:id="@+id/texttilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/textview"
+        android:textSize="33sp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/background2"
+            android:gravity="center"
+            android:text="@string/altura"
+            android:textAllCaps="true"
+            android:textColor="@color/text2"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf=" @+id/texttilte" />
+
+        <TextView
+            android:id="@+id/varcms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/_100_cms"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="278dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="10"
+            android:progressTint="@color/progress"
+            android:stepSize="1"
+            android:valueFrom="100"
+            android:valueTo="200"
+            app:layout_constraintTop_toBottomOf="@+id/height" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="@string/peso"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@id/progressBar"
+            app:layout_constraintStart_toStartOf="@id/progressBar"
+            app:layout_constraintTop_toBottomOf="@id/progressBar" />
+
+        <TextView
+            android:id="@+id/varpeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/kilo"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+
+                android:id="@+id/btn1"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/btn1"
+                android:onClick="restpeso"
+                android:text="@string/sumar"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/btn2"
+                android:onClick="sumpeso"
+                android:text="@string/restar"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/background"
+            android:gravity="center"
+            android:text="@string/calcular_imc"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

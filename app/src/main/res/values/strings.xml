@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MiCalculatorIMC</string>
+    <string name="restpeso">subtract weight</string>
+    <string name="sumpeso">add weight</string>
+    <string name="altura">altura</string>
+    <string name="cms">cms</string>
+    <string name="_100_cms">100 cms</string>
+    <string name="sumar">+</string>
+    <string name="restar">-</string>
+    <string name="peso">Peso</string>
+    <string name="kilo">10kg</string>
+    <string name="calcular_imc">Calcular imc</string>
+</resources>
