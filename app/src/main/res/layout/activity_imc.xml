@@ -53,7 +53,7 @@
             android:textStyle="bold" />
 
 
-        <com.google.android.material.slider.Slider
+        <com.google.android.material.slider.RangeSlider
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="278dp"
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:gravity="center"
-            android:text="@string/peso"
+            android:text="@string/Weight"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -90,7 +90,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="30dp"
-            android:text="@string/kilo"
+            android:text="@string/_10_kg"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -101,7 +101,7 @@
             android:orientation="horizontal">
 
 
-            <Button
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
 
                 android:id="@+id/btn1"
                 android:layout_width="75dp"
@@ -109,19 +109,21 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="30dp"
                 android:backgroundTint="@color/btn1"
-                android:onClick="restpeso"
-                android:text="@string/sumar"
-                android:textSize="30sp" />
+                android:text="@string/plus"
+                android:textSize="45sp"
+                android:tint="@color/tintback"
+                android:contentDescription="@string/add" />
 
-            <Button
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btn2"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="@color/btn2"
-                android:onClick="sumpeso"
-                android:text="@string/restar"
-                android:textSize="30sp" />
+                android:text="@string/rest"
+                android:textSize="45sp"
+                android:tint="@color/tintback"
+                android:contentDescription="@string/restar" />
 
         </LinearLayout>
 
@@ -133,7 +135,8 @@
             android:backgroundTint="@color/background"
             android:gravity="center"
             android:text="@string/calcular_imc"
-            android:textAllCaps="true" />
+            android:textAllCaps="true"
+            android:id="@+id/barra"/>
 
     </LinearLayout>
 

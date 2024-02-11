@@ -10,4 +10,10 @@
     <string name="peso">Peso</string>
     <string name="kilo">10kg</string>
     <string name="calcular_imc">Calcular imc</string>
+    <string name="sum">Sum</string>
+    <string name="Weight">peso</string>
+    <string name="_10_kg">10 kg</string>
+    <string name="plus">+</string>
+    <string name="rest">-</string>
+    <string name="add">sumar</string>
 </resources>
